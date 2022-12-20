@@ -1,0 +1,259 @@
+.projects {
+  padding: 50px 0 50px 0;
+  &-container {
+    margin: 0 auto;
+    width: 90%;
+    @include breakpoint-up(medium) {
+      width: 75%;
+    }
+    @include breakpoint-up(large) {
+      width: 70%;
+    }
+    @include breakpoint-up(xlarge) {
+      width: 85%;
+    }
+  }
+
+  .projects-title {
+    margin: 100px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    /*  text-transform: uppercase; */
+    text-align: center;
+    color: $subtitle-color;
+  }
+  .freelance-container {
+    /*  background-color: red; */
+    width: 100%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: stretch;
+    @include breakpoint-up(medium) {
+      justify-items: center;
+      gap: 30px;
+    }
+
+    @include breakpoint-up(large) {
+      justify-items: stretch;
+      /* justify-content: center; */
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint-up(xlarge) {
+      justify-items: stretch;
+      /* justify-content: center; */
+      gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .frontend-mentor-container {
+    width: 100%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+    justify-items: stretch;
+
+    @include breakpoint-up(medium) {
+      justify-items: center;
+
+      gap: 30px;
+    }
+
+    @include breakpoint-up(large) {
+      justify-items: stretch;
+      justify-content: center;
+
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+
+      /* grid-template-rows: 1fr 1fr; */
+    }
+
+    @include breakpoint-up(xlarge) {
+      justify-items: stretch;
+      /* justify-content: center; */
+      gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .project {
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    overflow: hidden;
+
+    height: 300px;
+    min-width: 200px;
+    position: relative;
+
+    &::selection {
+      border: none;
+    }
+
+    @include breakpoint-up(medium) {
+      min-width: 520px;
+      height: 350px;
+    }
+
+    @include breakpoint-up(large) {
+      min-width: 200px;
+      grid-column: span 1;
+
+      &:hover {
+        .project-info {
+          /* height: 100%; */
+          /*   background-color: rgba(0, 68, 98, 0.8); */
+          opacity: 1;
+        }
+
+        .project-info > * {
+          transform: translateY((0px));
+        }
+        .project-img {
+          transform: scale(1.4);
+        }
+        .frontend-img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .project-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      /* background-color: rgba(0, 68, 98, 0.8); */
+      background-color: rgba(1, 1, 1, 0.85);
+      color: $font-nav-hover-color;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 15px;
+      /*  padding-left: 20px; */
+      opacity: 1;
+      overflow: hidden;
+      /* transition: background-color 200ms ease; */
+
+      @include breakpoint-up(large) {
+        opacity: 0.25;
+
+        transition: opacity 200ms ease-in-out;
+        /* transition: height 200ms ease-in-out; */
+        & > * {
+          transform: translateY((100px));
+          transition: transform 0.25s ease-in-out;
+        }
+      }
+    }
+
+    .project-img {
+      position: block;
+      width: 100%;
+      max-width: 520px;
+      object-fit: cover;
+      transform: scale(1.2);
+      height: 100%;
+      transition: transform 300ms ease-in-out;
+      border-radius: 2px;
+      @include breakpoint-up(large) {
+        object-fit: cover;
+        transform: scale(1.2);
+      }
+    }
+    .frontend-img {
+      position: block;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      transition: transform 300ms ease-in-out;
+      border-radius: 2px;
+    }
+
+    .title-container {
+      gap: 10px;
+      height: 30px;
+      padding-left: 15px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .info-title {
+      width: auto;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $subtitle-color;
+    }
+
+    .external-container {
+      margin-top: 7px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 10px;
+      a {
+        color: $external-icons;
+        font-weight: 700;
+        font-size: 22px;
+        text-decoration: none;
+        &:hover {
+          color: $hover-external-icons;
+        }
+      }
+    }
+
+    .tech-container {
+      padding-left: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 15px;
+      font-size: 30px;
+    }
+  }
+  .more-projects {
+    margin: 0 auto;
+    width: 240px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .underline {
+        width: 237px;
+      }
+      a {
+        color: $title-color;
+      }
+    }
+    .underline {
+      width: 0px;
+      height: 2px;
+      background-color: $title-color;
+      position: absolute;
+      top: 23px;
+      transition: width 400ms ease-in-out;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: $subtitle-color;
+      letter-spacing: 3px;
+      font-weight: 500;
+      text-align: center;
+
+      transition: color 200ms ease-in-out;
+    }
+  }
+}

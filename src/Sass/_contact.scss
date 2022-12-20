@@ -1,0 +1,48 @@
+.contact {
+  padding-bottom: 80px;
+  &-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .contact-header {
+      p {
+        margin: 0 auto;
+        color: $subtitle-color;
+        width: 80%;
+        margin-bottom: 80px;
+
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .contact-card {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 50px;
+      @include breakpoint-up(large) {
+        gap: 90px;
+      }
+      a,
+      .social-icon {
+        text-decoration: none;
+        color: $subtitle-color;
+        font-size: 60px;
+        transition: transform 200ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          color: $title-color;
+        }
+        @include breakpoint-up(large) {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
