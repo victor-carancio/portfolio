@@ -9,10 +9,13 @@
     align-items: center;
 
     .contact-header {
+      .section-title {
+        margin-bottom: 120px;
+      }
       p {
         margin: 0 auto;
         color: $subtitle-color;
-        width: 80%;
+        width: 100%;
         margin-bottom: 80px;
 
         font-family: "Montserrat", sans-serif;

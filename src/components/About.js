@@ -14,6 +14,7 @@ const About = () => {
     IoLogoJavascript,
     FaNodeJs,
     about,
+    FaBootstrap,
   } = useGlobalContext();
   return (
     <section className="about">
@@ -36,17 +37,12 @@ const About = () => {
             <h1 className="section-title">Sobre mí</h1>
             <div className="info-p">
               {" "}
+              <p>Egresado de Ingeniería Civil informática.</p>
+              <p></p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestiae distinctio praesentium alias.
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestiae distinctio praesentium alias.
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Molestiae distinctio praesentium alias.
+                Actualmente mi objetivo formar parte de un equipo en el que
+                pueda ayudar con mi conocimiento, y seguir creciendo
+                profesionalmente como desarrollador.
               </p>
               <div className="btn">
                 <a href="#" target="blank">
@@ -63,6 +59,7 @@ const About = () => {
               <FaHtml5 />
               <FaCss3Alt />
               <FaSass />
+              <FaBootstrap />
               <IoLogoJavascript />
               <SiTypescript />
               <FaReact />

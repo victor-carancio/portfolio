@@ -9,6 +9,7 @@
   color: $font-nav-hover-color;
   &-container {
     margin: 0 auto;
+    margin-top: 40px;
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
@@ -16,9 +17,10 @@
       width: 85%;
     }
     .presentation {
-      /*   background-color: red; */
+      /* background-color: red; */
       width: 100%;
       margin: 0 auto;
+
       height: 80vh;
       display: flex;
       flex-flow: column nowrap;

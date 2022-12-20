@@ -7,6 +7,7 @@ import {
   FaReact,
   FaWordpress,
   FaNodeJs,
+  FaBootstrap,
 } from "react-icons/fa";
 import { SiTypescript, SiWoo } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
@@ -121,6 +122,7 @@ const AppProvider = ({ children }) => {
         SiTypescript,
         IoLogoJavascript,
         FaNodeJs,
+        FaBootstrap,
       }}
     >
       {children}

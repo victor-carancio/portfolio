@@ -15,11 +15,7 @@ const Contact = () => {
       >
         <div className="contact-header">
           <h1 className="section-title">Contacto</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            asperiores perferendis id tenetur aut optio quaerat libero eligendi
-            ducimus veritatis.
-          </p>
+          {/* <p>Puedes contactarme a través de alguna de mis redes</p> */}
         </div>
         <div className="contact-card">
           <a

@@ -498,6 +498,7 @@ a {
 }
 .about-container {
   margin: 0 auto;
+  margin-top: 40px;
   width: 90%;
   display: flex;
   flex-flow: column nowrap;
@@ -508,7 +509,7 @@ a {
   }
 }
 .about-container .presentation {
-  /*   background-color: red; */
+  /* background-color: red; */
   width: 100%;
   margin: 0 auto;
   height: 80vh;
@@ -681,10 +682,13 @@ a {
   justify-content: center;
   align-items: center;
 }
+.contact-container .contact-header .section-title {
+  margin-bottom: 120px;
+}
 .contact-container .contact-header p {
   margin: 0 auto;
   color: #e3f0ff;
-  width: 80%;
+  width: 100%;
   margin-bottom: 80px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
