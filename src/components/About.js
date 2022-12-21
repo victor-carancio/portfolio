@@ -2,6 +2,7 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useGlobalContext } from "../Context/context";
+import cv from "../Assets/doc/Victor-Carancio-CV.pdf";
 
 const About = () => {
   const {
@@ -37,15 +38,19 @@ const About = () => {
             <h1 className="section-title">Sobre mí</h1>
             <div className="info-p">
               {" "}
-              <p>Egresado de Ingeniería Civil informática.</p>
+              <p>
+                Egresado de Ingeniería Civil informática en la Universidad San
+                Sebastián.
+              </p>
               <p></p>
               <p>
-                Actualmente mi objetivo formar parte de un equipo en el que
-                pueda ayudar con mi conocimiento, y seguir creciendo
-                profesionalmente como desarrollador.
+                Mi objetivo es trabajar en una empresa en la que pueda formar
+                parte de un equipo, participando en el desarrollo y mejora de
+                proyectos, con el fin de seguir creciendo como desarrollador
+                web.
               </p>
               <div className="btn">
-                <a href="#" target="blank">
+                <a href={cv} target="_blank" rel="noopener noreferrer">
                   Descargar CV
                 </a>
                 <div className="btn-overlay"></div>

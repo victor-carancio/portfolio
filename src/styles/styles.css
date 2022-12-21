@@ -587,6 +587,7 @@ a {
 .about-container .info .about-info .info-p p {
   font-size: 18px;
   margin-top: 22px;
+  line-height: 25px;
 }
 @media (min-width: 64em) {
   .about-container .info {
