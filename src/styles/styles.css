@@ -14,26 +14,26 @@ a {
 }
 
 .separation {
-  height: 1px;
+  height: 0.0625rem;
   width: 20%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 6.25rem;
   background-color: white;
 }
 
 .section-title {
   text-align: center;
   color: #00c6bd;
-  font-size: 35px;
+  font-size: 2.1875rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  margin: 50px 0;
+  margin: 3.125rem 0;
 }
 @media (min-width: 64em) {
   .section-title {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 .projects {
-  padding: 50px 0 50px 0;
+  padding: 3.125rem 0 3.125rem 0;
 }
 .projects-container {
   margin: 0 auto;
@@ -72,9 +72,9 @@ a {
   }
 }
 .projects .projects-title {
-  margin: 100px 0;
-  font-size: 20px;
-  letter-spacing: 3px;
+  margin: 6.25rem 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
   font-weight: 500;
   /*  text-transform: uppercase; */
   text-align: center;
@@ -83,23 +83,23 @@ a {
 .projects .freelance-container {
   /*  background-color: red; */
   width: 100%;
-  margin: 60px auto;
+  margin: 3.75rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 2.5rem;
   justify-items: stretch;
 }
 @media (min-width: 40em) {
   .projects .freelance-container {
     justify-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 @media (min-width: 64em) {
   .projects .freelance-container {
     justify-items: stretch;
     /* justify-content: center; */
-    gap: 30px;
+    gap: 1.875rem;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -107,29 +107,29 @@ a {
   .projects .freelance-container {
     justify-items: stretch;
     /* justify-content: center; */
-    gap: 40px;
+    gap: 2.5rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .projects .frontend-mentor-container {
   width: 100%;
-  margin: 60px auto;
+  margin: 3.75rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 2.5rem;
   justify-items: stretch;
 }
 @media (min-width: 40em) {
   .projects .frontend-mentor-container {
     justify-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 @media (min-width: 64em) {
   .projects .frontend-mentor-container {
     justify-items: stretch;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
   }
@@ -138,16 +138,16 @@ a {
   .projects .frontend-mentor-container {
     justify-items: stretch;
     /* justify-content: center; */
-    gap: 40px;
+    gap: 2.5rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .projects .project {
-  border-radius: 2px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 0.125rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.1875rem 0.375rem, rgba(0, 0, 0, 0.23) 0rem 0.1875rem 0.375rem;
   overflow: hidden;
-  height: 300px;
-  min-width: 200px;
+  height: 18.75rem;
+  min-width: 12.5rem;
   position: relative;
 }
 .projects .project::-moz-selection {
@@ -158,13 +158,13 @@ a {
 }
 @media (min-width: 40em) {
   .projects .project {
-    min-width: 520px;
-    height: 350px;
+    min-width: 32.5rem;
+    height: 21.875rem;
   }
 }
 @media (min-width: 64em) {
   .projects .project {
-    min-width: 200px;
+    min-width: 12.5rem;
     grid-column: span 1;
   }
   .projects .project:hover .project-info {
@@ -173,7 +173,7 @@ a {
     opacity: 1;
   }
   .projects .project:hover .project-info > * {
-    transform: translateY(0px);
+    transform: translateY(0rem);
   }
   .projects .project:hover .project-img {
     transform: scale(1.4);
@@ -195,7 +195,7 @@ a {
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 15px;
+  gap: 0.9375rem;
   /*  padding-left: 20px; */
   opacity: 1;
   overflow: hidden;
@@ -208,20 +208,20 @@ a {
     /* transition: height 200ms ease-in-out; */
   }
   .projects .project .project-info > * {
-    transform: translateY(100px);
+    transform: translateY(6.25rem);
     transition: transform 0.25s ease-in-out;
   }
 }
 .projects .project .project-img {
   position: block;
   width: 100%;
-  max-width: 520px;
+  max-width: 32.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   transform: scale(1.2);
   height: 100%;
   transition: transform 300ms ease-in-out;
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 @media (min-width: 64em) {
   .projects .project .project-img {
@@ -237,12 +237,12 @@ a {
      object-fit: cover;
   height: 100%;
   transition: transform 300ms ease-in-out;
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 .projects .project .title-container {
-  gap: 10px;
-  height: 30px;
-  padding-left: 15px;
+  gap: 0.625rem;
+  height: 1.875rem;
+  padding-left: 0.9375rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -252,59 +252,59 @@ a {
   width: auto;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 20px;
+  letter-spacing: 0.125rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: #e3f0ff;
 }
 .projects .project .external-container {
-  margin-top: 7px;
+  margin-top: 0.4375rem;
   display: flex;
   flex-flow: row nowrap;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .projects .project .external-container a {
   color: #00c6bd;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-decoration: none;
 }
 .projects .project .external-container a:hover {
   color: #007583;
 }
 .projects .project .tech-container {
-  padding-left: 15px;
-  margin-bottom: 20px;
+  padding-left: 0.9375rem;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-flow: row nowrap;
-  gap: 15px;
-  font-size: 30px;
+  gap: 0.9375rem;
+  font-size: 1.875rem;
 }
 .projects .more-projects {
   margin: 0 auto;
-  width: 240px;
+  width: 15rem;
   cursor: pointer;
   position: relative;
 }
 .projects .more-projects:hover .underline {
-  width: 237px;
+  width: 14.8125rem;
 }
 .projects .more-projects:hover a {
   color: #00c6bd;
 }
 .projects .more-projects .underline {
-  width: 0px;
-  height: 2px;
+  width: 0rem;
+  height: 0.125rem;
   background-color: #00c6bd;
   position: absolute;
-  top: 23px;
+  top: 1.4375rem;
   transition: width 400ms ease-in-out;
 }
 .projects .more-projects a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #e3f0ff;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   font-weight: 500;
   text-align: center;
   transition: color 200ms ease-in-out;
@@ -312,19 +312,19 @@ a {
 
 .header {
   background-color: #060f1d;
-  height: 100px;
+  height: 6.25rem;
   /*  .has-fade {
     visibility: hidden;
     overflow: hidden;
   } */
 }
 .header-container {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0rem 0.75rem 1.75rem 0rem, rgba(0, 0, 0, 0.1) 0rem 0.125rem 0.25rem 0rem, rgba(0, 0, 0, 0.05) 0rem 0rem 0rem 0.0625rem inset;
   background-color: #060f1d;
   position: fixed;
   z-index: 99;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -333,8 +333,8 @@ a {
   cursor: pointer;
   display: inline;
   color: #e3f0ff;
-  font-size: 23px;
-  letter-spacing: 2px;
+  font-size: 1.4375rem;
+  letter-spacing: 0.125rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   transition: color 300ms ease-in-out;
@@ -344,13 +344,13 @@ a {
 }
 @media (min-width: 64em) {
   .header-item {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .header-item:hover {
     color: #00c6bd;
   }
   .header-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 1.875rem;
   }
 }
 .header .selected-item {
@@ -360,7 +360,7 @@ a {
 }
 .header .nav-bar,
 .header .header-toggle {
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 .header-toggle > span {
   display: block;
@@ -492,13 +492,13 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
-  margin-top: -19px;
+  margin-top: -1.1875rem;
   /* padding: 100px 0; */
   color: rgb(233, 233, 233);
 }
 .about-container {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   width: 90%;
   display: flex;
   flex-flow: column nowrap;
@@ -528,13 +528,13 @@ a {
   width: 90%;
   align-self: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 12px;
-  margin-bottom: 5px;
+  letter-spacing: 0.0625rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
 }
 @media (min-width: 40em) {
   .about-container .presentation-head {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media (min-width: 64em) {
@@ -547,79 +547,79 @@ a {
   /*  background-color: blue; */
   width: 90%;
   font-family: "Montserrat";
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 @media (min-width: 40em) {
   .about-container .presentation-title {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 @media (min-width: 64em) {
   .about-container .presentation-title {
     width: 90%;
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 .about-container .presentation-title span {
   color: #00c6bd;
 }
 .about-container .presentation p {
-  font-size: 18px;
-  margin-top: 25px;
+  font-size: 1.125rem;
+  margin-top: 1.5625rem;
 }
 .about-container .info {
   /* height: 50vh; */
   /* background-color: red; */
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 @media (min-width: 64em) {
   .about-container .info {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 }
 .about-container .info .about-info {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 .about-container .info .about-info .info-p p {
-  font-size: 18px;
-  margin-top: 22px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  margin-top: 1.375rem;
+  line-height: 1.5625rem;
 }
 @media (min-width: 64em) {
   .about-container .info {
-    height: 450px;
+    height: 28.125rem;
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
   .about-container .info .about-info {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
     width: 45%;
   }
   .about-container .info .about-info .info-p p {
-    font-size: 18px;
-    margin-top: 25px;
+    font-size: 1.125rem;
+    margin-top: 1.5625rem;
   }
   .about-container .info .stack {
     width: 45%;
   }
   .about-container .info .stack .stack-icons {
-    font-size: 60px;
-    height: 200px;
+    font-size: 3.75rem;
+    height: 12.5rem;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
   }
 }
 .about-container .info .stack .stack-icons {
-  font-size: 65px;
+  font-size: 4.0625rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 .about-container .info .section-title {
   text-align: center;
@@ -636,11 +636,11 @@ a {
   width: 100%;
 }
 .about .btn {
-  width: 180px;
-  height: 45px;
-  margin-top: 40px;
-  border-radius: 3px;
-  border: 2px solid #007583;
+  width: 11.25rem;
+  height: 2.8125rem;
+  margin-top: 2.5rem;
+  border-radius: 0.1875rem;
+  border: 0.125rem solid #007583;
   position: relative;
   display: flex;
   align-items: center;
@@ -656,9 +656,9 @@ a {
   color: #e3f0ff;
   margin: 0 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   position: relative;
 }
 .about .btn-overlay {
@@ -673,7 +673,7 @@ a {
 }
 
 .contact {
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 .contact-container {
   margin: 0 auto;
@@ -684,31 +684,31 @@ a {
   align-items: center;
 }
 .contact-container .contact-header .section-title {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 .contact-container .contact-header p {
   margin: 0 auto;
   color: #e3f0ff;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.0313rem;
 }
 .contact-container .contact-card {
   display: flex;
   flex-flow: row nowrap;
-  gap: 50px;
+  gap: 3.125rem;
 }
 @media (min-width: 64em) {
   .contact-container .contact-card {
-    gap: 90px;
+    gap: 5.625rem;
   }
 }
 .contact-container .contact-card a,
 .contact-container .contact-card .social-icon {
   text-decoration: none;
   color: #e3f0ff;
-  font-size: 60px;
+  font-size: 3.75rem;
   transition: transform 200ms ease-in-out;
 }
 .contact-container .contact-card a:hover,
@@ -720,6 +720,6 @@ a {
 @media (min-width: 64em) {
   .contact-container .contact-card a,
 .contact-container .contact-card .social-icon {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }

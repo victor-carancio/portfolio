@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
   &-container {
     margin: 0 auto;
     width: 80%;
@@ -10,31 +10,31 @@
 
     .contact-header {
       .section-title {
-        margin-bottom: 120px;
+        margin-bottom: 7.5rem;
       }
       p {
         margin: 0 auto;
         color: $subtitle-color;
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
 
         font-family: "Montserrat", sans-serif;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.0313rem;
       }
     }
 
     .contact-card {
       display: flex;
       flex-flow: row nowrap;
-      gap: 50px;
+      gap: 3.125rem;
       @include breakpoint-up(large) {
-        gap: 90px;
+        gap: 5.625rem;
       }
       a,
       .social-icon {
         text-decoration: none;
         color: $subtitle-color;
-        font-size: 60px;
+        font-size: 3.75rem;
         transition: transform 200ms ease-in-out;
 
         &:hover {
@@ -43,7 +43,7 @@
           color: $title-color;
         }
         @include breakpoint-up(large) {
-          font-size: 70px;
+          font-size: 4.375rem;
         }
       }
     }
