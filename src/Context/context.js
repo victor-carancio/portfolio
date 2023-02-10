@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
-import { frontendMentor, works } from "../data";
+import { frontendMentor, works, backend } from "../data";
+import { GrMysql } from "react-icons/gr";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -9,7 +10,7 @@ import {
   FaNodeJs,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiTypescript, SiWoo } from "react-icons/si";
+import { SiTypescript, SiWoo, SiSwagger, SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -73,16 +74,22 @@ const AppProvider = ({ children }) => {
         return <FaSass key={id} />;
       case "React":
         return <FaReact key={id} />;
-
       case "Typescript":
         return <SiTypescript key={id} />;
       case "Wordpress":
         return <FaWordpress key={id} />;
       case "WooCommerce":
         return <SiWoo key={id} />;
-
+      case "NodeJs":
+        return <FaNodeJs key={id} />;
+      case "Swagger":
+        return <SiSwagger key={id} />;
+      case "MongoDB":
+        return <SiMongodb key={id} />;
+      case "MySql":
+        return <GrMysql key={id} />;
       default:
-        return <IoLogoJavascript />;
+        return <IoLogoJavascript key={id} />;
     }
   };
   useEffect(() => {
@@ -113,6 +120,7 @@ const AppProvider = ({ children }) => {
         currSection,
         frontendMentor,
         works,
+        backend,
         iconFilter,
         FaHtml5,
         FaCss3Alt,
@@ -123,6 +131,8 @@ const AppProvider = ({ children }) => {
         IoLogoJavascript,
         FaNodeJs,
         FaBootstrap,
+        SiMongodb,
+        GrMysql,
       }}
     >
       {children}

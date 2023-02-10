@@ -16,6 +16,8 @@ const About = () => {
     FaNodeJs,
     about,
     FaBootstrap,
+    SiMongodb,
+    GrMysql,
   } = useGlobalContext();
   return (
     <section className="about">
@@ -69,6 +71,8 @@ const About = () => {
               <SiTypescript />
               <FaReact />
               <FaNodeJs />
+              <SiMongodb />
+              <GrMysql />
             </div>
           </div>
         </div>

@@ -55,21 +55,15 @@ a {
 .projects-container {
   margin: 0 auto;
   width: 90%;
-}
-@media (min-width: 40em) {
-  .projects-container {
+  /*  @include breakpoint-up(medium) {
     width: 75%;
   }
-}
-@media (min-width: 64em) {
-  .projects-container {
+  @include breakpoint-up(large) {
     width: 70%;
   }
-}
-@media (min-width: 87.5em) {
-  .projects-container {
+  @include breakpoint-up(xlarge) {
     width: 85%;
-  }
+  } */
 }
 .projects .projects-title {
   margin: 6.25rem 0;
@@ -80,66 +74,25 @@ a {
   text-align: center;
   color: #e3f0ff;
 }
-.projects .freelance-container {
-  /*  background-color: red; */
-  width: 100%;
+.projects .works-container {
   margin: 3.75rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-flow: column nowrap;
   gap: 2.5rem;
-  justify-items: stretch;
 }
 @media (min-width: 40em) {
-  .projects .freelance-container {
+  .projects .works-container {
     justify-items: center;
+    align-items: center;
     gap: 1.875rem;
   }
 }
 @media (min-width: 64em) {
-  .projects .freelance-container {
-    justify-items: stretch;
-    /* justify-content: center; */
-    gap: 1.875rem;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 87.5em) {
-  .projects .freelance-container {
-    justify-items: stretch;
-    /* justify-content: center; */
-    gap: 2.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.projects .frontend-mentor-container {
-  width: 100%;
-  margin: 3.75rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  justify-items: stretch;
-}
-@media (min-width: 40em) {
-  .projects .frontend-mentor-container {
-    justify-items: center;
-    gap: 1.875rem;
-  }
-}
-@media (min-width: 64em) {
-  .projects .frontend-mentor-container {
-    justify-items: stretch;
+  .projects .works-container {
+    flex-flow: row wrap;
     justify-content: center;
-    gap: 1.875rem;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-  }
-}
-@media (min-width: 87.5em) {
-  .projects .frontend-mentor-container {
-    justify-items: stretch;
-    /* justify-content: center; */
+    /* gap: 1.875rem; */
     gap: 2.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .projects .project {
@@ -159,13 +112,16 @@ a {
 @media (min-width: 40em) {
   .projects .project {
     min-width: 32.5rem;
+    max-width: 32.5rem;
     height: 21.875rem;
   }
 }
 @media (min-width: 64em) {
   .projects .project {
-    min-width: 12.5rem;
-    grid-column: span 1;
+    min-width: 21.875rem;
+    max-width: 26.875rem;
+    flex: 1 0 0px;
+    /*  grid-column: span 1; */
   }
   .projects .project:hover .project-info {
     /* height: 100%; */
@@ -418,22 +374,6 @@ a {
   overflow: hidden;
 }
 
-@-webkit-keyframes fade-in {
-  from {
-    visibility: hidden;
-    display: none;
-    height: 0;
-  }
-  1% {
-    visibility: visible;
-  }
-  to {
-    visibility: visible;
-    display: block;
-    height: 90vh;
-  }
-}
-
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -450,22 +390,7 @@ a {
   }
 }
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    visibility: visible;
-    height: 90vh;
-  }
-  99% {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-    height: 0;
-  }
+  animation: fade-in 300ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -482,8 +407,7 @@ a {
   }
 }
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 300ms ease-in-out forwards;
 }
 
 .about {
@@ -719,7 +643,7 @@ a {
 }
 @media (min-width: 64em) {
   .contact-container .contact-card a,
-.contact-container .contact-card .social-icon {
+  .contact-container .contact-card .social-icon {
     font-size: 4.375rem;
   }
 }
