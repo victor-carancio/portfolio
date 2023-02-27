@@ -73,7 +73,7 @@ export const backend = [
   {
     proyectTitle: "Movie api",
     codeLink: "https://github.com/victor-carancio/ip-address-tracker",
-    pageLink: "https://movie-api-production-a406.up.railway.app/api-docs/",
+    pageLink: "https://movie-api-jyy5.onrender.com/api-docs/",
     tech: ["NodeJs", "MySql", "Swagger"],
     img: require("./Assets/movie-api.jpg"),
     id: "b2",
