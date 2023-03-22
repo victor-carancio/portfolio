@@ -4,7 +4,7 @@ export const frontendMentor = [
     proyectTitle: "Rest Country Api",
     codeLink: "https://github.com/victor-carancio/rest-countries-api",
     pageLink: "https://victor-carancio.github.io/rest-countries-api/",
-    tech: ["Html", "Sass", "Typescript", "React"],
+    tech: ["Html", "Sass", "Typescript", "React", "Redux"],
     img: require("./Assets/country-api-2.jpg"),
     id: "f1",
     /* img: "imgs/img-1.jpg", */
@@ -21,7 +21,7 @@ export const frontendMentor = [
     proyectTitle: "To-Do App",
     codeLink: "https://github.com/victor-carancio/todo-app-react",
     pageLink: "https://victor-carancio.github.io/todo-app-react/",
-    tech: ["Html", "Sass", "Javascript"],
+    tech: ["Html", "Sass", "Javascript", "React"],
     img: require("./Assets/todo-app.jpg"),
     id: "f3",
   },
@@ -35,14 +35,14 @@ export const frontendMentor = [
 ];
 
 export const works = [
-  /*  {
+  {
     proyectTitle: "DMF Express",
     codeLink: "none",
     pageLink: "https://dmfexpress.cl/",
     tech: ["Wordpress", "Javascript"],
     img: require("./Assets/truck.jpg"),
     id: "w1",
-  }, */
+  },
   {
     proyectTitle: "Tello Landing Page",
     codeLink: "none",
@@ -66,7 +66,7 @@ export const backend = [
     proyectTitle: "TODO Api",
     codeLink: "https://github.com/victor-carancio/TODO-api-express",
     pageLink: "https://todo-api-express.onrender.com/api-docs/",
-    tech: ["NodeJs", "MongoDB", "Swagger"],
+    tech: ["NodeJs", "MongoDB", "Jest", "Swagger"],
     img: require("./Assets/todo-api2.jpg"),
     id: "b1",
   },

@@ -10,7 +10,14 @@ import {
   FaNodeJs,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiTypescript, SiWoo, SiSwagger, SiMongodb } from "react-icons/si";
+import {
+  SiTypescript,
+  SiWoo,
+  SiSwagger,
+  SiMongodb,
+  SiJest,
+  SiRedux,
+} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -88,6 +95,10 @@ const AppProvider = ({ children }) => {
         return <SiMongodb key={id} />;
       case "MySql":
         return <GrMysql key={id} />;
+      case "Jest":
+        return <SiJest key={id} />;
+      case "Redux":
+        return <SiRedux key={id} />;
       default:
         return <IoLogoJavascript key={id} />;
     }
