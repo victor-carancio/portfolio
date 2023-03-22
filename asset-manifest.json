@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1a34dc8f.css",
-    "main.js": "/portfolio/static/js/main.3967054e.js",
+    "main.js": "/portfolio/static/js/main.a7bd5f38.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/movie-api.jpg": "/portfolio/static/media/movie-api.a0d86bde87da7dcfb103.jpg",
+    "static/media/truck.jpg": "/portfolio/static/media/truck.3b784474e4392d7c6134.jpg",
     "static/media/office.jpg": "/portfolio/static/media/office.1ac878afebfa002219df.jpg",
     "static/media/welder-2.jpg": "/portfolio/static/media/welder-2.463da701bfdd46873dc6.jpg",
     "static/media/todo-api2.jpg": "/portfolio/static/media/todo-api2.bbec38d6318a367e0cc9.jpg",
@@ -14,11 +15,11 @@
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
     "main.1a34dc8f.css.map": "/portfolio/static/css/main.1a34dc8f.css.map",
-    "main.3967054e.js.map": "/portfolio/static/js/main.3967054e.js.map",
+    "main.a7bd5f38.js.map": "/portfolio/static/js/main.a7bd5f38.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a34dc8f.css",
-    "static/js/main.3967054e.js"
+    "static/js/main.a7bd5f38.js"
   ]
 }
