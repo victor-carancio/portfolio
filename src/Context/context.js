@@ -17,7 +17,12 @@ import {
   SiMongodb,
   SiJest,
   SiRedux,
+  SiStyledcomponents,
+  SiExpress,
+  SiPrisma,
+  SiPostgresql,
 } from "react-icons/si";
+
 import { IoLogoJavascript } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -99,6 +104,14 @@ const AppProvider = ({ children }) => {
         return <SiJest key={id} />;
       case "Redux":
         return <SiRedux key={id} />;
+      case "Styled components":
+        return <SiStyledcomponents key={id} />;
+      case "Express":
+        return <SiExpress />;
+      case "Prisma":
+        return <SiPrisma />;
+      case "Postgresql":
+        return <SiPostgresql />;
       default:
         return <IoLogoJavascript key={id} />;
     }
@@ -144,6 +157,11 @@ const AppProvider = ({ children }) => {
         FaBootstrap,
         SiMongodb,
         GrMysql,
+        SiRedux,
+        SiStyledcomponents,
+        SiPrisma,
+        SiPostgresql,
+        SiExpress,
       }}
     >
       {children}

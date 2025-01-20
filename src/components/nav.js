@@ -19,7 +19,7 @@ const Navbar = () => {
     setOpenToggle(!openToggle);
     setOpenMenu("canOpen");
 
-    if (openMenu == "canOpen" && openToggle == true) {
+    if (openMenu === "canOpen" && openToggle === true) {
       setTimeout(() => setOpenMenu("onLoad"), 500);
     }
   };
@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="nav-bar hide-for-mobile">
           <p
             className={
-              currSection == "home"
+              currSection === "home"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -39,7 +39,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "about"
+              currSection === "about"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -49,7 +49,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "proyects"
+              currSection === "proyects"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -59,7 +59,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "contact"
+              currSection === "contact"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -84,7 +84,7 @@ const Navbar = () => {
 
         <div
           className={
-            openMenu == "onLoad"
+            openMenu === "onLoad"
               ? "header-menu hide-for-desktop has-fade"
               : openToggle
               ? "header-menu hide-for-desktop has-fade fade-in"
@@ -93,7 +93,7 @@ const Navbar = () => {
         >
           <p
             className={
-              currSection == "home"
+              currSection === "home"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -106,7 +106,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "about"
+              currSection === "about"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -119,7 +119,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "proyects"
+              currSection === "proyects"
                 ? "header-item selected-item"
                 : "header-item"
             }
@@ -132,7 +132,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              currSection == "contact"
+              currSection === "contact"
                 ? "header-item selected-item"
                 : "header-item"
             }

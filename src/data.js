@@ -1,4 +1,33 @@
 import { BiLinkExternal } from "react-icons/bi";
+
+export const personalProjects = [
+  {
+    proyectTitle: "Price Prowler Page",
+    codeLink: "https://github.com/victor-carancio/priceProwlerFront",
+    pageLink: "https://price-prowler.vcaranciodev.online/",
+    tech: ["React", "Typescript", "Styled components", "Redux"],
+    img: require("./Assets/pp-home.PNG"),
+    id: "p1",
+    /* img: "imgs/img-1.jpg", */
+  },
+  {
+    proyectTitle: "Price Prowler Api",
+    codeLink: "https://github.com/victor-carancio/priceProwl",
+    pageLink: "https://priceprowler.vcaranciodev.online/documentation/",
+    tech: [
+      "Express",
+      "NodeJs",
+      "Typescript",
+      "Prisma",
+      "Postgresql",
+      "Swagger",
+    ],
+    img: require("./Assets/videogame.jpg"),
+    id: "p2",
+    /* img: "imgs/img-1.jpg", */
+  },
+];
+
 export const frontendMentor = [
   {
     proyectTitle: "Rest Country Api",
