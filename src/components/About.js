@@ -1,8 +1,8 @@
 import React from "react";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 import { useGlobalContext } from "../Context/context";
-import cv from "../Assets/doc/Victor-Carancio-CV.pdf";
+import cv from "../Assets/doc/CV-victor-carancio.pdf";
 
 const About = () => {
   const {
