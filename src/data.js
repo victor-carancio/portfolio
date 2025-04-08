@@ -64,14 +64,14 @@ export const frontendMentor = [
 ];
 
 export const works = [
-  {
-    proyectTitle: "DMF Express",
-    codeLink: "none",
-    pageLink: "https://dmfexpress.cl/",
-    tech: ["Wordpress", "Javascript"],
-    img: require("./Assets/truck.jpg"),
-    id: "w1",
-  },
+  // {
+  //   proyectTitle: "DMF Express",
+  //   codeLink: "none",
+  //   pageLink: "https://dmfexpress.cl/",
+  //   tech: ["Wordpress", "Javascript"],
+  //   img: require("./Assets/truck.jpg"),
+  //   id: "w1",
+  // },
   {
     proyectTitle: "Tello Landing Page",
     codeLink: "none",

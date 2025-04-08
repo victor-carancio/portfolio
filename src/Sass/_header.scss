@@ -87,7 +87,6 @@
     width: 100%;
     height: 0;
     margin: 0 auto;
-
     opacity: 99%;
     border-bottom-left-radius: 0.3125rem;
     border-bottom-right-radius: 0.3125rem;
@@ -95,11 +94,8 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* font-family: $font-fam-roboto; */
 
     p {
-      /*  color: $links-font-color; */
-      /*  font-size: $nav-bar-font; */
       font-weight: 500;
     }
     p:not(:last-child) {

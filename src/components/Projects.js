@@ -10,16 +10,23 @@ const Projects = () => {
     <section className="projects" ref={proyectsRef}>
       <h1 className="section-title">Proyectos</h1>
 
-      <div className="projects-frontend-mentor">
-        <h1 className="projects-title" data-aos="fade-up" data-aos-offset="250">
-          Proyectos destacados
-        </h1>
-        <div className="works-container">
-          {personalProjects.map((item, index) => {
-            return <SingleProject key={index} {...item} />;
-          })}
+      <div className="projects-container">
+        <div className="projects-frontend-mentor">
+          <h1
+            className="projects-title"
+            data-aos="fade-up"
+            data-aos-offset="250"
+          >
+            Proyectos destacados
+          </h1>
+          <div className="works-container">
+            {personalProjects.map((item, index) => {
+              return <SingleProject key={index} {...item} />;
+            })}
+          </div>
         </div>
       </div>
+
       <div className="projects-container">
         <div className="projects-freelance">
           <h1

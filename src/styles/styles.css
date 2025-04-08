@@ -55,15 +55,6 @@ a {
 .projects-container {
   margin: 0 auto;
   width: 90%;
-  /*  @include breakpoint-up(medium) {
-    width: 75%;
-  }
-  @include breakpoint-up(large) {
-    width: 70%;
-  }
-  @include breakpoint-up(xlarge) {
-    width: 85%;
-  } */
 }
 .projects .projects-title {
   margin: 6.25rem 0;
@@ -100,11 +91,8 @@ a {
   box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.1875rem 0.375rem, rgba(0, 0, 0, 0.23) 0rem 0.1875rem 0.375rem;
   overflow: hidden;
   height: 18.75rem;
-  min-width: 12.5rem;
+  min-width: 200px;
   position: relative;
-}
-.projects .project::-moz-selection {
-  border: none;
 }
 .projects .project::selection {
   border: none;
@@ -172,8 +160,7 @@ a {
   position: block;
   width: 100%;
   max-width: 32.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: scale(1.2);
   height: 100%;
   transition: transform 300ms ease-in-out;
@@ -181,16 +168,14 @@ a {
 }
 @media (min-width: 64em) {
   .projects .project .project-img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transform: scale(1.2);
   }
 }
 .projects .project .frontend-img {
   position: block;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   transition: transform 300ms ease-in-out;
   border-radius: 0.125rem;
@@ -355,11 +340,8 @@ a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* font-family: $font-fam-roboto; */
 }
 .header-menu p {
-  /*  color: $links-font-color; */
-  /*  font-size: $nav-bar-font; */
   font-weight: 500;
 }
 .header-menu p:not(:last-child) {
@@ -385,7 +367,7 @@ a {
   }
   to {
     visibility: visible;
-    display: block;
+    display: flex;
     height: 90vh;
   }
 }
@@ -433,10 +415,9 @@ a {
   }
 }
 .about-container .presentation {
-  /* background-color: red; */
   width: 100%;
   margin: 0 auto;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -444,11 +425,11 @@ a {
 }
 @media (min-width: 64em) {
   .about-container .presentation {
+    height: 80vh;
     width: 100%;
   }
 }
 .about-container .presentation-head {
-  /* background-color: green; */
   width: 90%;
   align-self: center;
   text-transform: uppercase;
@@ -647,3 +628,5 @@ a {
     font-size: 4.375rem;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

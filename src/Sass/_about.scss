@@ -17,20 +17,18 @@
       width: 85%;
     }
     .presentation {
-      /* background-color: red; */
       width: 100%;
       margin: 0 auto;
-
-      height: 80vh;
+      height: 60vh;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
       @include breakpoint-up(large) {
+        height: 80vh;
         width: 100%;
       }
       &-head {
-        /* background-color: green; */
         width: 90%;
         align-self: center;
         text-transform: uppercase;
